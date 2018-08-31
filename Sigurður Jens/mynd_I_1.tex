@@ -1,0 +1,50 @@
+\begin{tikzpicture}
+\tikzset{normalline/.style={thin}}
+
+\pgfmathsetmacro{\xlo}{-1.};
+\pgfmathsetmacro{\xhi}{5.};
+\pgfmathsetmacro{\ylo}{-1.};
+\pgfmathsetmacro{\yhi}{4.};
+\pgfmathsetmacro{\rad}{.07pt};
+\pgfmathsetmacro{\margin}{.5pt};
+\pgfmathsetmacro{\linescale}{20};
+
+\clip ({\xlo-\margin},{\ylo-\margin}) rectangle ({\xhi+\margin},{\yhi+\margin});
+
+\path [name path=left-egde] (\xlo,\ylo) -- (\xlo,\yhi);
+\path [name path=right-egde] (\xhi,\ylo) -- (\xhi,\yhi);
+\path [name path=bottom-egde] (\xlo,\ylo) -- (\xhi,\ylo);
+\path [name path=top-egde] (\xlo,\yhi) -- (\xhi,\yhi);
+
+\coordinate [label={[xshift=3.,yshift=1.]:$A$}] (A) at (0,3);
+\coordinate [label={[xshift=-2.,yshift=1.]:$B$}] (B) at (3,3);
+\coordinate [label={[xshift=-2.,yshift=1.]:$P$}] (P) at (0,0);
+\coordinate [label={[xshift=3.,yshift=0.]:$Q$}] (Q) at (1.5,.4);
+
+\path [name path=line_A-B] ($ (A)!\linescale!(B) $) -- ($ (B)!\linescale!(A) $);
+\path [name path=line_A-Q] ($ (A)!\linescale!(Q) $) -- ($ (Q)!\linescale!(A) $);
+\path [name path=line_B-P] ($ (B)!\linescale!(P) $) -- ($ (P)!\linescale!(B) $);
+\path [name path=line_P-Q] ($ (P)!\linescale!(Q) $) -- ($ (Q)!\linescale!(P) $);
+
+\path [name intersections={of=line_A-B and left-egde, by=left_l}];
+\path [name intersections={of=line_A-B and right-egde, by=right_l}];
+\path [name intersections={of=line_B-P and bottom-egde, by=left_m}];
+\path [name intersections={of=line_B-P and top-egde, by=right_m}];
+\path [name intersections={of=line_A-Q and bottom-egde, by=left_n}];
+\path [name intersections={of=line_A-Q and top-egde, by=right_n}];
+\path [name intersections={of=line_P-Q and left-egde, by=left_h}];
+\path [name intersections={of=line_P-Q and right-egde, by=right_h}];
+
+\draw[normalline] (left_l) -- (right_l) node [right] {$l$};
+\draw[normalline] (left_m) -- (right_m) node [above] {$m$};
+\draw[normalline] (left_h) -- (right_h) node [right] {$h$};
+\draw[normalline] (left_n) -- (right_n) node [above] {$n$};
+
+\path [name intersections={of=line_A-Q and line_B-P, by=C}];
+
+\fill (A) circle (\rad);
+\fill (B) circle (\rad);
+\fill (P) circle (\rad);
+\fill (Q) circle (\rad);
+\fill (C) circle(\rad) node [xshift=-9.,yshift=0.] {$C$};
+\end{tikzpicture}
