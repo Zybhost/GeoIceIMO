@@ -1,0 +1,59 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[icelandic]{babel}
+\usepackage{titlesec}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{mathtools}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=newest}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows,backgrounds,calc,intersections,through}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Skilgreining}
+
+\theoremstyle{plain}
+\newtheorem{proposition}{Verkefni}
+
+\newtheoremstyle{examplesty}         % Name
+            {}                   % Above skip 
+            {}                   % Below skip
+            {\upshape}           % Body font
+            {}                   % Indent
+            {\bfseries} % Head font
+            {}                   % Head body punct
+            {1em}                % Space after head
+            {}                   % Heading
+
+% Examples rejig the theorem environment
+\theoremstyle{examplesty}
+\newtheorem{example}{Dæmi}
+
+% Solutions use a modified proof environment
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{}
+                \begin{proof}[\bfseries\upshape Lausn]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+
+
+\titleformat{\section}[hang]
+{\normalfont\bfseries}
+{}{0.5em}{}
+
+\titleformat{\subsection}[wrap]
+{\normalfont\bfseries}
+{}{0.5em}{}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\stline}[1]{\langle #1 \rangle}
+\newcommand{\len}[1]{\left| [#1] \right|}
+\newcommand{\sign}[1]{\operatorname{sign}\left( #1 \right)}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}

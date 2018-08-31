@@ -1,11 +1,3 @@
-\documentclass[12pt,a4paper] {article}
-\usepackage{pgf,tikz}
-\usetikzlibrary{calc,intersections,through,backgrounds}
-
-\begin{document}
-
-\begin{figure}[htbp]
-\centering
 \begin{tikzpicture}
 \tikzset{mainline/.style={thick,color=black}};
 \tikzset{auxilaryline/.style={on background layer,thin,color=gray,dashed}};
@@ -62,6 +54,3 @@
 \fill[variablepoint] (D) circle(\pointsize);
 \fill[dependentpoint] (Q) circle(\pointsize);
 \end{tikzpicture}
-\end{figure}
-
-\end{document}
