@@ -1,0 +1,67 @@
+\documentclass[12pt,a4paper] {article}
+\usepackage{pgf,tikz}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+
+\begin{document}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\tikzset{mainline/.style={thick,color=black}};
+\tikzset{auxilaryline/.style={on background layer,thin,color=gray,dashed}};
+\tikzset{variablepoint/.style={color=blue}};
+\tikzset{dependentpoint/.style={color=red}};
+
+\pgfmathsetmacro{\xlo}{-3};
+\pgfmathsetmacro{\xhi}{6};
+\pgfmathsetmacro{\ylo}{-3};
+\pgfmathsetmacro{\yhi}{3};
+\pgfmathsetmacro{\marg}{.5};
+\pgfmathsetmacro{\r}{2};
+\pgfmathsetmacro{\pointsize}{.12};
+\pgfmathsetmacro{\linscale}{20};
+
+\clip (\xlo,\ylo) rectangle (\xhi,\yhi);
+
+\coordinate (O) at (0,0);
+\coordinate (P) at (1.2,0);
+\coordinate (A) at (130:\r);
+\coordinate (B) at (250:\r);
+
+\draw [name path=omega,mainline] (O) circle (\r);
+\draw ($ (A)!\linscale!(P) $) -- ($ (P)!\linscale!(A) $);
+\path [name path=line_A-C] (P) -- ($ (A)!\linscale!(P) $);
+\draw ($ (B)!\linscale!(P) $) -- ($ (P)!\linscale!(B) $);
+\path [name path=line_B-D] (P) -- ($ (B)!\linscale!(P) $);
+
+\path [name intersections={of=omega and line_A-C, by=C}];
+\path [name intersections={of=omega and line_B-D, by=D}];
+
+\draw [name path=line_A-D] ($ (A)!\linscale!(D) $) -- ($ (D)!\linscale!(A) $);
+\draw [name path=line_B-C] ($ (B)!\linscale!(C) $) -- ($ (C)!\linscale!(B) $);
+
+\path [name intersections={of=line_A-D and line_B-C, by=Q}];
+\coordinate let
+		\p1 = (O),
+		\p2 = ($ (P) - (O) $),
+		\p3 = (0,\r),
+		\n2 = {veclen(\x2,\y2)},
+		\n3 = {veclen(\x3,\y3)}
+	in
+		coordinate (P') at ({\x1 + (\n3*\n3)/(\n2*\n2)*\x2}, {\y1 + (\n3*\n3)/(\n2*\n2)*\y2});
+
+\coordinate[rotate around={90:(P')}] (O1) (O);
+\coordinate[rotate around={-90:(P')}] (O2) (O);
+
+\draw[auxilaryline] (O1) -- (O2);
+
+\fill (P) circle(\pointsize);
+\fill[variablepoint] (A) circle(\pointsize);
+\fill[variablepoint] (B) circle(\pointsize);
+\fill[variablepoint] (C) circle(\pointsize);
+\fill[variablepoint] (D) circle(\pointsize);
+\fill[dependentpoint] (Q) circle(\pointsize);
+\end{tikzpicture}
+\end{figure}
+
+\end{document}
