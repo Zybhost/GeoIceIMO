@@ -4,6 +4,7 @@
 \usepackage{titlesec}
 \usepackage{amsmath,amsfonts,amsthm}
 \usepackage{mathtools}
+\usepackage{fourier}
 \usepackage{fullpage}
 \usepackage{graphicx}
 \usepackage{subcaption}
@@ -49,11 +50,23 @@
 {\normalfont\bfseries}
 {}{0.5em}{}
 
+%Common number systems:
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\N}{\mathbb{N}}
+
+%Straight line:
 \newcommand{\stline}[1]{\langle #1 \rangle}
+%Ray to the right:
+\newcommand{\ray}[1]{[ #1 \rangle}
+%line segment:
+\newcommand{\linseg}[1]{\left[ #1\right]}
+%length:
 \newcommand{\len}[1]{\left| [#1] \right|}
+%arc:
+\newcommand{\arc}[1]{\widearc{#1}}
+
+%Some common functions:
 \newcommand{\sign}[1]{\operatorname{sign}\left( #1 \right)}
 \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
