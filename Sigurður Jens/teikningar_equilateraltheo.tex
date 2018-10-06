@@ -1,0 +1,45 @@
+\begin{tikzpicture}
+\tikzset{mainline/.style={thick,color=black}};
+\tikzset{auxilaryline/.style={on background layer,thin,color=gray,dashed}};
+\tikzset{variablepoint/.style={color=blue}};
+\tikzset{dependentpoint/.style={color=red}};
+
+\pgfmathsetmacro{\xlo}{-4.4};
+\pgfmathsetmacro{\xhi}{4.4};
+\pgfmathsetmacro{\ylo}{-3.1};
+\pgfmathsetmacro{\yhi}{3.1};
+\pgfmathsetmacro{\marg}{.3};
+\pgfmathsetmacro{\r}{2};
+\pgfmathsetmacro{\pointsize}{.12};
+\pgfmathsetmacro{\linscale}{20};
+
+\clip (\xlo,\ylo) rectangle (\xhi,\yhi);
+
+\coordinate[label={[xshift=-5.,yshift=1.]:$A$}] (A) at (-1.3,0);
+\coordinate[label={[xshift=5.,yshift=1.]:$B$}] (B) at (1.3,0);
+\coordinate[label={[xshift=-10.,yshift=1.]:$D$}] (D) at ($ (A)!-1!(B) $);
+
+\draw[name path=omega_1,mainline] (A) let
+					\p1 = ($ (B) - (A) $)
+				in
+					circle ({veclen(\x1,\y1)});
+\draw[name path=omega_2,mainline] (B) let
+					\p1 = ($ (A) - (B) $)
+				in
+					circle ({veclen(\x1,\y1)});
+
+\draw ($ (A)!\linscale!(B) $) -- ($ (B)!\linscale!(A) $);
+
+\path [name intersections={of=omega_1 and omega_2, by={C,C'}}];
+
+\draw (A) -- (C);
+\draw (B) -- (C);
+
+\fill[variablepoint] (A) circle(\pointsize);
+\fill[variablepoint] (B) circle(\pointsize);
+\fill[variablepoint] (B) circle(\pointsize);
+\fill[dependentpoint] (C) circle(\pointsize);
+\draw (C) node[xshift=1., yshift=9.] {$C$};
+\fill[dependentpoint] (C') circle(\pointsize);
+\draw (C') node[xshift=1., yshift=-9.] {$C'$};
+\end{tikzpicture}

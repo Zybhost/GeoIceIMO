@@ -1,0 +1,58 @@
+\section{Teikingar með hringfara og reglustiku}
+
+Í þessum kafla sýnum við hverning nota má hringfara og reglustiku til þess að teikna ýmsar flatarmyndir. Reglustika er verkfæri til þess að teikna beinar línur. Ef gefnir eru tveir ólíkir punktar $A$ og $B$, má teikna línuna $\stline{A,B}$ (réttar sagt hluta hennar) með því leggja reglustiku upp að punktunum tveimur og draga svo línuna meðfram henni. Sé línan ekki nægilega löng á myndinni má framlegja hana með því að leggja enda reglustikunnar upp að línunni og draga svo framhaldið.
+
+\begin{figure}[htbp]
+\centering
+\input{teikingar_drawline.tex}
+\end{figure}
+
+Hringfari er verkfæri til þess að teikna hringi. Gefið punktar $A$ og $B$ þá má draga hringinn með miðju $A$ og geisla $\len{A,B}$ með því að stinga oddi hringfarans í punktinn $A$ og stilla svo bilið á milli armanna þannig að blýið sé yfir $B$. Síðan er hringfaranum snúið þangað til blýið kemur aftur að punktinum $B$. Við getum einning notað hringfarann til þess að \glqq færa til lengdir \grqq. Gefið strik $\linseg{A,B}$ og punkt $C$ þá getum við teiknað hring með geisla $\len{A,B}$ og miðju $C$ með því að stilla bilið á milli arma hringfarans jafnt bilinu á milli $A$ og $B$ og lyfta hringfaranum svo, setja oddinn niður í punktinum $C$, og að lokum draga hringinn. Þess bera að geta þegar talað er um teikningar með hringfara og reglustiku klassískt er alltaf gert ráð fyrir að hringfarinn \glqq falli saman \grqq{} þegar honum er lyft upp. Það þýðir að hringfarinn getur aðeins teiknað hringi ef miðjan og einn punktur á hringnum er gefinn. Það kemur hins vegar í ljós að unnt er að komast hjá þessu og flytja má til lengdir með þessari gerð hringfara, þó skrefin séu vitaskuld fleiri. Við megum því auðvelda okkur lífið og gera ráð fyrir að hringfari geti fært til lengdir.
+
+\begin{figure}[htbp]
+\centering
+\input{teikningar_drawcompass.tex}
+\end{figure}
+
+Fyrir utan að teikna línur og hringi, getum við merkt inn á skurðpunkta. Það eru þrjár gerðir: Skurðpunktur tveggja lína, skurðpunktur línu og hrings, skurðupunktur tveggja hringja.
+
+Eins og áður hefur komið fram eru tvær ólíkar línur annaðhvort samsíða eða skerast í nákvæmlega einum punkti. Ef við höfum teiknað tvær línur sem eru ekki samsíða en sjáum ekki skurðpunktinn getum við lengt línurnar tvær í þá átt sem þér nálgast hvor aðra þar til skurpunkturinn er fundinn.
+
+Fyrir línu og hring getur þrennt gerst: Línan og hringurinn skerast ekki, línan er snertill við hringinn og \glqq sker\grqq{} hann í nákvæmlega einum punkti, eða þá í þriðja lagi að línan sker hringinn í tveimur ólíkum punktum. Í fyrsta tilvikinu liggja allir punktar línunnar utan hringsins. Í öðru tilvikinu liggja allir punktar línunnar, utan snertipunktsins, utan hringsins en snertipunkturinn sjálfur liggur á hringnum. Í þriðja tilvikinu er til punktur á línunni sem liggur innan hringsins.
+
+Fyrir tvo ólíka hringi getur þrennt gerst: Hringirnir skerast ekki, hringirnir snertast og skerast því í nákvæmlega einum punkti, eða hringirnir skerast í nákæmlega tveimur punktum. Tveir hringir skerast ekki ef þeir liggja algjörlega utan hvers annars eða þá að annar liggur algjörlega innan í hinum. Tveir hringir geta annaðhvort snerst að utanverðu eða þá að sá minni snertir þann stærri að innanverðu. Tveir hringir skerast í tveimur punktum ef og aðeins ef hvor hringur hefur bæði punkt innan og utan hins.
+
+Með hringfara og reglustiku má teikna alskonar flatarmyndir, en í ljós kemur að hringfari og reglustika duga ekki til að leysa öll rúmfræðileg verkefni, t.d. er ekki unnt að þrískipta almennu horni með hringfara og reglustiku einum saman. Við göngum út frá eftirfarandi tveimur setningum um skurðpunkta gefnum:
+
+\begin{theorem}\label{concirc_1}[Skurðpunktur striks og línu]
+Gerum ráð fyrir að $\omega$ sé hringur og $\linseg{A,B}$ sé línustrik þar sem $A$ er innan $\omega$ og $B$ er utan $\omega$. Þá skerast $\omega$ og $\linseg{A,B}$ í nákvæmlega einum punkti.
+\end{theorem}
+
+Æfing: Sýnið að af þessari setningu leiðir að lína sker hring í nákvæmlega tveimur punktum ef til er punktur á línunnin innan hringsins.
+
+\begin{theorem}\label{concirc_2}[Skurðpunktur tveggja hringja]
+Ef $\omega_1$ og $\omega_2$ eru hringir og $A$ og $B$ eru punktar á $\omega_1$ þ.a. $A$ sé innan $\omega_2$ en $B$ utan $\omega_2$. Þá skerast $\omega_1$ og $\omega_2$.
+\end{theorem}
+
+Ljóst er að tveir hringir sem skerast geta ekki haft sameiginlega miðju, því annars væru þeir sami hringurinn. Við getum því dregið línu á milli miðjanna þeirra.
+
+Æfing: Gerum ráð fyrir að $\omega_1$ og $\omega_2$ séu tveir hringir sem skerast. Sannið að skurðpunktarnir séu nákvæmlega tveir og þeir liggi sitt hvoru megin við tengilínuna á milli miðjanna.
+
+Við erum nú tilbúin í fyrstu teikninuna okkar.
+
+\begin{proposition}
+Gefið strik $\linseg{A,B}$ finnið punkt $C$ þannig að $\triangle ABC$ sé jafnhliða.
+\end{proposition}
+
+\begin{solution}
+Drögum hringinn $\omega_1$ með miðju $A$ og geisla $\linseg{A,B}$ og hringinn $\omega_2$ með miðju $B$ og geisla $\linseg{A,B}$. Sýnum að þessir hringir skerist. Látum $D$ vera punktinn á línunninni $\stline{A,B}$ þanning að $\linseg{A,B} \cong \linseg{A,D}$ og $D*A*B$. Ljóst er að $B$ og $D$ liggja á $\omega_1$ og $B$ liggur innan $\omega_2$ þar sem $B$ er miðja $\omega_2$. Nú er $A$ á $\omega_2$ og $D*A*B$ svo $D$ liggur utan $\omega_2$. Samkvæmt setningu \ref{concirc_2} og æfingunni sem fylgir, skerast $\omega_1$ og $\omega_2$ í nákvæmlega teimur punktum $C$ og $C'$. Þar sem $C$ liggur á $\omega_1$ er $\linseg{A,C} \cong \linseg{A,B}$. Þar sem $C$ liggur á $\omega_2$ er $\linseg{B,C} \cong \linseg{B,A}$. Nú er $\linseg{A,B} \cong \linseg{B,A}$ svo $\linseg{A,C} \cong \linseg{B,C}$. Við höfum því að allar hliðar $\triangle ABC$ eru jafnlangar og $\triangle ABC$ er því jafnhliða þríhyrningur með hliðina $\linseg{A,B}$.
+
+\begin{figure}[htbp]
+\centering
+\input{teikningar_equilateraltheo.tex}
+\end{figure}
+\end{solution}
+
+\begin{remark}
+Við sjáum að $\triangle ABC'$ er einnig jafnhliða. Það er því til nákvæmlega tveir jafnhliða þríhyrningar með $\linseg{A,B}$ sem hlið.
+\end{remark}

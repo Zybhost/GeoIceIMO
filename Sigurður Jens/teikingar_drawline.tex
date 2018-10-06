@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+\tikzset{mainline/.style={thick,color=black}};
+\tikzset{auxilaryline/.style={on background layer,thin,color=gray,dashed}};
+\tikzset{variablepoint/.style={color=blue}};
+\tikzset{dependentpoint/.style={color=red}};
+
+\pgfmathsetmacro{\xlo}{-1.5};
+\pgfmathsetmacro{\xhi}{3.3};
+\pgfmathsetmacro{\ylo}{.7};
+\pgfmathsetmacro{\yhi}{1.8};
+\pgfmathsetmacro{\marg}{.3};
+\pgfmathsetmacro{\r}{2};
+\pgfmathsetmacro{\pointsize}{.12};
+\pgfmathsetmacro{\linscale}{20};
+
+\clip (\xlo,\ylo) rectangle (\xhi,\yhi);
+
+\coordinate[label={[xshift=1.,yshift=2.]:$A$}] (A) at (0,1);
+\coordinate[label={[xshift=1.,yshift=2.]:$B$}] (B) at (1.8,1.2);
+
+\draw[mainline] ($(A)!\linscale!(B) $) -- ($ (B)!\linscale!(A) $);
+\fill[variablepoint] (A) circle(\pointsize);
+\fill[variablepoint] (B) circle(\pointsize);
+\end{tikzpicture}

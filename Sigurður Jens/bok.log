@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.13)  1 OCT 2018 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.13)  6 OCT 2018 23:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -920,7 +920,8 @@ brarythrough.code.tex
 File: tikzlibrarythrough.code.tex 2008/02/03 v3.0.1a (rcs-revision 1.1)
 )
 \c@proposition=\count138
-\c@example=\count139
+\c@theorem=\count139
+\c@example=\count140
  (c:/texlive/2018/texmf-dist/tex/latex/titlesec/wrap.tss
 File: wrap.tss 2016/03/15
 )) (./bok.aux)
@@ -972,16 +973,16 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 (c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count140
+\scratchcounter=\count141
 \scratchdimen=\dimen257
 \scratchbox=\box43
-\nofMPsegments=\count141
-\nofMParguments=\count142
+\nofMPsegments=\count142
+\nofMParguments=\count143
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count143
+\MPscratchCnt=\count144
 \MPscratchDim=\dimen258
-\MPnumerator=\count144
-\makeMPintoPDFobject=\count145
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
 \everyMPtoPDFconversion=\toks46
 ) (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1068,108 +1069,108 @@ Missing character: There is no ; in font nullfont!
 ) [1
 
 
-{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./vidauki.tex
- (./frumsendur.tex
-Overfull \hbox (2.56035pt too wide) in paragraph at lines 7--8
-[]\T1/futs/m/n/12 Þess ber þó að geta að Evklíð átt-aði sig á sam-síða-frumsend
--an væri óháð hinum frumsend-
- []
+{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./teikningar.
+tex
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 3.
 
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 11
-.
+
 (c:/texlive/2018/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 11.
+(Font)              scaled to size 11.03998pt on input line 3.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 11.
+(Font)              scaled to size 8.27998pt on input line 3.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 11.
-LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+(Font)              scaled to size 6.43999pt on input line 3.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
 (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 11.
+(Font)              scaled to size 11.03998pt on input line 3.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 11.
+(Font)              scaled to size 8.27998pt on input line 3.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 11.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 11.
+(Font)              scaled to size 6.43999pt on input line 3.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 3.
 
 (c:/texlive/2018/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Overfull \hbox (29.33998pt too wide) in paragraph at lines 21--21
-\T1/futs/b/n/12 Legu- 
- []
-
-
-Overfull \hbox (54.83994pt too wide) in paragraph at lines 21--21
-\T1/futs/b/n/12 frumsend- 
- []
-
-
-Overfull \hbox (11.80798pt too wide) in paragraph at lines 21--21
-\T1/futs/b/n/12 ur|  
- []
-
-
-Overfull \hbox (30.28798pt too wide) in paragraph at lines 21--21
-| \T1/futs/b/n/12 Legu-frumsend-
- []
-
-
-Overfull \hbox (16.79504pt too wide) in paragraph at lines 22--23
-[] []\T1/futs/m/n/12 Frumsendur þessa flokks fjalla um legu-vensl-in. Í þess-um
- flokki eru þrjár frumsend-
+(./teikingar_drawline.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+) (./teikningar_drawcompass.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+Overfull \hbox (11.04744pt too wide) in paragraph at lines 17--18
+\T1/futs/m/n/12 gerð-ir: Skurð-punkt-ur tveggja lína, skurð-punkt-ur línu og hr
+ings, skurðupunkt-ur tveggja hringja. 
  []
 
 [2]
-Overfull \hbox (24.26398pt too wide) in paragraph at lines 45--45
-\T1/futs/b/n/12 Rað- 
- []
-
-
-Overfull \hbox (54.83994pt too wide) in paragraph at lines 45--45
-\T1/futs/b/n/12 frumsend- 
- []
-
-
-Overfull \hbox (11.80798pt too wide) in paragraph at lines 45--45
-\T1/futs/b/n/12 ur|  
- []
-
-
-Overfull \hbox (25.21198pt too wide) in paragraph at lines 45--45
-| \T1/futs/b/n/12 Rað-frumsend-
- []
-
-)) [3] (./bok.aux) ) 
+LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <12> not available
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 47.
+ (./teikningar_equilateraltheo.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)) [3] [4] (./bok.aux) ) 
 Here is how much of TeX's memory you used:
- 26564 strings out of 492646
- 654396 string characters out of 6133325
- 833645 words of memory out of 5000000
- 29922 multiletter control sequences out of 15000+600000
- 55978 words of font info for 63 fonts, out of 8000000 for 9000
+ 26639 strings out of 492646
+ 655780 string characters out of 6133325
+ 836645 words of memory out of 5000000
+ 29986 multiletter control sequences out of 15000+600000
+ 60944 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,8n,392p,747b,1149s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:
-/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/
-2018/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2018/texmf-dist
-/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/ad
-obe/utopia/putri8a.pfb>
-Output written on bok.pdf (3 pages, 59171 bytes).
+ 80i,8n,392p,1323b,1149s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc
+}<c:/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/te
+xlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/201
+8/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2018/texmf-dist/fo
+nts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/adobe
+/utopia/putri8a.pfb>
+Output written on bok.pdf (4 pages, 65650 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
