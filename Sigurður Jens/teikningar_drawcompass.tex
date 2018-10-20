@@ -1,19 +1,14 @@
 \begin{tikzpicture}
-\tikzset{mainline/.style={thick,color=black}};
-\tikzset{auxilaryline/.style={on background layer,thin,color=gray,dashed}};
-\tikzset{variablepoint/.style={color=blue}};
-\tikzset{dependentpoint/.style={color=red}};
-
 \pgfmathsetmacro{\xlo}{-2.2};
 \pgfmathsetmacro{\xhi}{2.2};
 \pgfmathsetmacro{\ylo}{-2.2};
 \pgfmathsetmacro{\yhi}{2.2};
-\pgfmathsetmacro{\marg}{.3};
+\pgfmathsetmacro{\margin}{.3};
 \pgfmathsetmacro{\r}{2};
-\pgfmathsetmacro{\pointsize}{.12};
-\pgfmathsetmacro{\linscale}{20};
 
-\clip (\xlo,\ylo) rectangle (\xhi,\yhi);
+\input{tikzpreamble.tex};
+
+\canvas;
 
 \coordinate[label={[xshift=1.,yshift=2.]:$A$}] (A) at (0,0);
 \coordinate[label={[xshift=4.,yshift=1.]:$B$}] (B) at (1.8,.7);

@@ -1,19 +1,13 @@
 \begin{tikzpicture}
-\tikzset{mainline/.style={thick,color=black}};
-\tikzset{auxilaryline/.style={on background layer,thin,color=gray,dashed}};
-\tikzset{variablepoint/.style={color=blue}};
-\tikzset{dependentpoint/.style={color=red}};
 
 \pgfmathsetmacro{\xlo}{-3};
 \pgfmathsetmacro{\xhi}{6};
 \pgfmathsetmacro{\ylo}{-3};
 \pgfmathsetmacro{\yhi}{3};
-\pgfmathsetmacro{\marg}{.5};
+\pgfmathsetmacro{\margin}{.5};
 \pgfmathsetmacro{\r}{2};
-\pgfmathsetmacro{\pointsize}{.12};
-\pgfmathsetmacro{\linscale}{20};
 
-\clip (\xlo,\ylo) rectangle (\xhi,\yhi);
+\canvas;
 
 \coordinate (O) at (0,0);
 \coordinate (P) at (1.2,0);
@@ -21,16 +15,16 @@
 \coordinate (B) at (250:\r);
 
 \draw [name path=omega,mainline] (O) circle (\r);
-\draw ($ (A)!\linscale!(P) $) -- ($ (P)!\linscale!(A) $);
-\path [name path=line_A-C] (P) -- ($ (A)!\linscale!(P) $);
-\draw ($ (B)!\linscale!(P) $) -- ($ (P)!\linscale!(B) $);
-\path [name path=line_B-D] (P) -- ($ (B)!\linscale!(P) $);
+\draw \lline{A}{P};
+\path [name path=line_A-C] ray{P}{A};
+\draw \lline{B}{P};
+\path [name path=line_B-D] ray{P}{B};
 
 \path [name intersections={of=omega and line_A-C, by=C}];
 \path [name intersections={of=omega and line_B-D, by=D}];
 
-\draw [name path=line_A-D] ($ (A)!\linscale!(D) $) -- ($ (D)!\linscale!(A) $);
-\draw [name path=line_B-C] ($ (B)!\linscale!(C) $) -- ($ (C)!\linscale!(B) $);
+\draw [name path=line_A-D] \lline{A}{D};
+\draw [name path=line_B-C] \lline{B}{C};
 
 \path [name intersections={of=line_A-D and line_B-C, by=Q}];
 \coordinate let

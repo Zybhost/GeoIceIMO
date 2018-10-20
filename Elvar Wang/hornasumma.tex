@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+
+\pgfmathsetmacro{\xlo}{0.};
+\pgfmathsetmacro{\xhi}{5.};
+\pgfmathsetmacro{\ylo}{0.};
+\pgfmathsetmacro{\yhi}{3.};
+\pgfmathsetmacro{\margin}{.5};
+
+\input{tikzpreamble.tex};
+
+\canvas;
+
+\coordinate [label={[xshift=0.,yshift=0.]:$A$}] (A) at (0,0);
+\coordinate [label={[xshift=0.,yshift=0.]:$B$}] (B) at (5,0);
+\coordinate [label={[xshift=0.,yshift=0.]:$C$}] (C) at (3.3,3);
+\coordinate (D) at ($(C) + (A) - (B)$);
+\coordinate (E) at ($(C) + (B) - (A)$);
+
+\draw[mainline] \lline{A}{B};
+\draw[mainline] (A) -- (C) -- (B);
+\draw[auxilaryline] \lline{C}{D};
+
+\multianglesym[12pt]{(C)}{(A)}{(B)}{mainline}{1};
+\multianglesym[11pt]{(A)}{(B)}{(C)}{mainline}{2};
+\multianglesym[10pt]{(B)}{(C)}{(A)}{mainline}{3};
+\multianglesym[12pt]{(A)}{(C)}{(D)}{mainline}{1};
+\multianglesym[11pt]{(B)}{(C)}{(E)}{mainline}{2};
+
+\fill[variablepoint] (A) circle (\pointsize);
+\fill[variablepoint] (B) circle (\pointsize);
+\fill[variablepoint] (C) circle (\pointsize);
+\end{tikzpicture}

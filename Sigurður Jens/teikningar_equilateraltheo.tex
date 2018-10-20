@@ -1,19 +1,14 @@
 \begin{tikzpicture}
-\tikzset{mainline/.style={thick,color=black}};
-\tikzset{auxilaryline/.style={on background layer,thin,color=gray,dashed}};
-\tikzset{variablepoint/.style={color=blue}};
-\tikzset{dependentpoint/.style={color=red}};
-
 \pgfmathsetmacro{\xlo}{-4.4};
 \pgfmathsetmacro{\xhi}{4.4};
 \pgfmathsetmacro{\ylo}{-3.1};
 \pgfmathsetmacro{\yhi}{3.1};
-\pgfmathsetmacro{\marg}{.3};
+\pgfmathsetmacro{\margin}{.3};
 \pgfmathsetmacro{\r}{2};
-\pgfmathsetmacro{\pointsize}{.12};
-\pgfmathsetmacro{\linscale}{20};
 
-\clip (\xlo,\ylo) rectangle (\xhi,\yhi);
+\input{tikzpreamble.tex}
+
+\canvas;
 
 \coordinate[label={[xshift=-5.,yshift=1.]:$A$}] (A) at (-1.3,0);
 \coordinate[label={[xshift=5.,yshift=1.]:$B$}] (B) at (1.3,0);
@@ -28,7 +23,7 @@
 				in
 					circle ({veclen(\x1,\y1)});
 
-\draw ($ (A)!\linscale!(B) $) -- ($ (B)!\linscale!(A) $);
+\draw \lline{A}{B};
 
 \path [name intersections={of=omega_1 and omega_2, by={C,C'}}];
 
@@ -37,7 +32,7 @@
 
 \fill[variablepoint] (A) circle(\pointsize);
 \fill[variablepoint] (B) circle(\pointsize);
-\fill[variablepoint] (B) circle(\pointsize);
+\fill[variablepoint] (D) circle(\pointsize);
 \fill[dependentpoint] (C) circle(\pointsize);
 \draw (C) node[xshift=1., yshift=9.] {$C$};
 \fill[dependentpoint] (C') circle(\pointsize);

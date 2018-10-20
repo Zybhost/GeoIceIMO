@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.13)  6 OCT 2018 23:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.6.13)  20 OCT 2018 01:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1064,7 +1064,23 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+ (./tikzpreamble.tex
 Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
 Missing character: There is no ; in font nullfont!
 ) [1
 
@@ -1111,13 +1127,10 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+ (./tikzpreamble.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-) (./teikningar_drawcompass.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -1131,6 +1144,34 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
+Missing character: There is no ; in font nullfont!
+) (./teikningar_drawcompass.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+(./tikzpreamble.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+Missing character: There is no ; in font nullfont!
+)
 Overfull \hbox (11.04744pt too wide) in paragraph at lines 17--18
 \T1/futs/m/n/12 gerð-ir: Skurð-punkt-ur tveggja lína, skurð-punkt-ur línu og hr
 ings, skurðupunkt-ur tveggja hringja. 
@@ -1139,7 +1180,18 @@ ings, skurðupunkt-ur tveggja hringja.
 [2]
 LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <12> not available
 (Font)              Font shape `T1/futs/b/it' tried instead on input line 47.
- (./teikningar_equilateraltheo.tex
+
+
+LaTeX Warning: Reference `concirc_2' on page 3 undefined on input line 48.
+
+(./teikningar_equilateraltheo.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+ (./tikzpreamble.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -1152,22 +1204,31 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-)) [3] [4] (./bok.aux) ) 
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+))) [3] [4] (./bok.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 26639 strings out of 492646
- 655780 string characters out of 6133325
- 836645 words of memory out of 5000000
- 29986 multiletter control sequences out of 15000+600000
+ 26686 strings out of 492646
+ 656583 string characters out of 6133325
+ 836644 words of memory out of 5000000
+ 30024 multiletter control sequences out of 15000+600000
  60944 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,8n,392p,1323b,1149s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc
-}<c:/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/te
-xlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/201
-8/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2018/texmf-dist/fo
-nts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/adobe
-/utopia/putri8a.pfb>
-Output written on bok.pdf (4 pages, 65650 bytes).
+ 80i,8n,392p,1323b,1193s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2018/texm
+f-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2018/texmf-dist/
+fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2018/texmf-dist/fonts/typ
+e1/adobe/utopia/putb8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/adobe/utopia
+/putr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on bok.pdf (4 pages, 65988 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream
